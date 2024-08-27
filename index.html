@@ -18,8 +18,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;1000&display=swap');
 
         :root {
-            /* --color-banner-accent: #ebade1; */
-            --color-banner-accent: #af89a9;
+            /* --color-accent: #ebade1; */
+            --color-accent: #af89a9;
             --color-background-dark-0: #0e0e0e;
             --color-background-dark-1: #1b1b1b;
             --color-foreground-dark-0: #efefef;
@@ -41,6 +41,10 @@
             font-weight: 1000;
         }
 
+        .nametag {
+            color: var(--color-accent);
+        }
+
         .banner {
             position: absolute;
             z-index: -1;
@@ -56,7 +60,7 @@
         }
 
         .banner svg path {
-            fill: var(--color-banner-accent);
+            fill: var(--color-accent);
         }
 
 
@@ -64,16 +68,30 @@
             display: grid;
             place-content: center;
             background-color: var(--color-background-dark-1);
-            width: 80%;
-            margin: 20% auto 0 auto;
+            width: 40%;
+            margin: 10% auto 0 auto;
         }
 
-        @media (max-width: 900px) {
-            .header {
-                width: 100%;
-                background-color: #00000000;
-            }
+        /* remnant from responsive layout */
+        body {
+            background-color: var(--color-background-dark-1);
         }
+
+        .header {
+            top: -20%;
+            width: 100%;
+            background-color: #00000000;
+        }
+
+        .pfp {
+            display: none;
+        }
+
+        .banner {
+            display: none;
+        }
+
+        /* end */
 
         .pfp {
             position: relative;
@@ -107,22 +125,22 @@
     </div>
     <div class="header">
         <img alt="" src="/assets/avatar.png" class="pfp" />
-        <h1>emma</h1>
+        <h1 class="nametag">emily's contacts</h1>
         <div aria-label="Social links" class="icons">
             <div> <!-- HACK for responsive layout to group icons into pairs -->
-                <a aria-label="Discord link" target="_blank" href="https://discord.gg/C9BzEdFqX4">
-                    <i class="bi bi-discord"></i>
+                <a title="Email link" aria-label="Email link" href="mailto:me@implied.win">
+                    <i class="bi bi-envelope-at-fill"></i>
                 </a>
-                <a aria-label="Telegram link" target="_blank" href="https://t.me/ovest04">
+                <a title="Telegram link" aria-label="Telegram link" target="_blank" href="https://t.me/ovest04">
                     <i class="bi bi-telegram"></i>
                 </a>
             </div>
             <div>
-                <a aria-label="Twitter link" target="_blank" href="https://twitter.com/estrogenmommy">
-                    <i class="bi bi-twitter"></i>
+                <a title="Signal link" aria-label="Signal link" target="_blank" href="https://signal.me/#eu/dFjJ06TsakVLfFcqCtDmCQ3pHCJUiyO-9aag-6CBtn2eIRP18S1AyIC-kIOdW20C">
+                    <i class="bi bi-signal"></i>
                 </a>
-                <a aria-label="Bluesky link" target="_blank" href="https://bsky.app/profile/implied.win">
-                    <i class="bi bi-cloud-fill"></i>
+                <a title="Google Voice link" aria-label="Google Voice link" href="sms:+13464780072">
+                    <i class="bi bi-telephone-fill"></i>
                 </a>
             </div>
         </div>

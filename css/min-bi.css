@@ -28,3 +28,7 @@
 .bi-discord::before { content: "\f300"; }
 .bi-telegram::before { content: "\f5b3"; }
 .bi-twitter::before { content: "\f5ef"; }
+.bi-envelope-at-fill::before { content: "\f84b"; }
+.bi-signal::before { content: "\f664"; }
+.bi-google::before { content: "\f3f0"; }
+.bi-telephone-fill::before { content: "\f5b4"; }
