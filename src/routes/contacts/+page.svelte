@@ -11,7 +11,8 @@
     let contacts: contactData[] = [
         {name: "discord", label: "@impliedgg", type: "copy", data: "impliedgg"},
         {name: "telegram", label: "@emilyl04", type: "link", data: "https://t.me/emilyl04"},
-        {name: "bluesky", label: "implied.win", type: "link", data: "https://bsky.app/profile/implied.win"}
+        {name: "bluesky", label: "implied.win", type: "link", data: "https://bsky.app/profile/implied.win"},
+        {name: "email", label: "me@implied.win", type: "link", data:"mailto:me@implied.win"}
     ]
 </script>
 
