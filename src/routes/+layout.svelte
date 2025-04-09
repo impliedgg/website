@@ -42,6 +42,6 @@
 {@render children()}
 
 <footer>
-    <span>&copy; {year}-, emily</span><br>
+    <span>&copy; {year}-, emily</span> ∙ <span>avatar by @aqinaaam</span><br>
     <span>made with love, svelte, and one too many late nights</span>
 </footer>
