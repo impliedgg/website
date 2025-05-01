@@ -34,11 +34,11 @@
             data: "mailto:me@implied.win",
         },
         {
-            name: "matrix",
-            label: "@emily:implied.win",
-            type: "copy",
-            data: "@emily:implied.win"
-        },
+            name: "signal",
+            label: "@emma.04",
+            type: "link",
+            data: "https://signal.me/#eu/dFjJ06TsakVLfFcqCtDmCQ3pHCJUiyO-9aag-6CBtn2eIRP18S1AyIC-kIOdW20C"
+        }
     ];
 </script>
 
