@@ -17,9 +17,9 @@
         },
         {
             name: "telegram",
-            label: "@emilyl04",
+            label: "@impliedgg",
             type: "link",
-            data: "https://t.me/emilyl04",
+            data: "https://t.me/impliedgg",
         },
         {
             name: "bluesky",
@@ -33,6 +33,12 @@
             type: "link",
             data: "mailto:me@implied.win",
         },
+        {
+            name: "signal",
+            label: "@emma.04",
+            type: "link",
+            data: "https://signal.me/#eu/dFjJ06TsakVLfFcqCtDmCQ3pHCJUiyO-9aag-6CBtn2eIRP18S1AyIC-kIOdW20C"
+        }
     ];
 </script>
 
