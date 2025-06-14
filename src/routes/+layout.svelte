@@ -29,8 +29,9 @@
         color: var(--layer-10);
         width: 100%;
         position: relative;
-        bottom: -6rem;
+        bottom: -4rem;
         padding: 2em auto;
+        padding-bottom: 4rem;
     }
 </style>
 <nav>

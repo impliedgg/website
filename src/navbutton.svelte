@@ -20,6 +20,7 @@
         border-radius: 4px;
         color: var(--nav-main-link);
         padding: 0.25em 0.5em;
+        margin: .1em auto;
     }
     button.active {
         background-color: var(--layer-1);
