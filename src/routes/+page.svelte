@@ -1,23 +1,8 @@
 <script lang="ts">
-    import Cardcontainer from "./cardcontainer.svelte";
-    import Card from "./card.svelte";
+    import Cardcontainer from "$lib/cardcontainer.svelte";
+    import Card from "$lib/card.svelte";
     import { type cardData } from '$lib';
-    
-
-        let cards: cardData[] = [
-        {
-            title: "portproxy",
-            description: "A stupid simple port-to-port reverse proxy.",
-            language: "Go",
-            url: "https://github.com/impliedgg/portproxy"
-        },
-        {
-            title: "donottwitter",
-            description: "A userscript to remove your ability to browse Twitter (now X).",
-            language: "JavaScript",
-            url: "https://github.com/impliedgg/donottwitter"
-        }
-    ];
+    import { showcase_cards } from "$lib/data/cards";
 </script>
 
 <svelte:head>
@@ -43,7 +28,7 @@
 </p>
 
 <Cardcontainer>
-    {#each cards as c}
+    {#each showcase_cards as c}
         <Card title={c['title']} description={c['description']} language={c['language']} url={c['url']}></Card>
     {/each}
 </Cardcontainer>
@@ -57,3 +42,6 @@
         margin-top: 0;
     }
 </style>
+
+<!--- mastodon verification - i have an account on tech.lgbt, but it is pretty much unused. --->
+<a aria-hidden="true" style="display:none;" rel="me" href="https://tech.lgbt/@implied"></a> 

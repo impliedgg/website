@@ -1,45 +1,7 @@
 <script lang="ts">
     import Contact from "./contact.svelte";
 
-    type contactData = {
-        name: string;
-        label: string | undefined;
-        type: "copy" | "link";
-        data: string;
-    };
-
-    let contacts: contactData[] = [
-        {
-            name: "discord",
-            label: "@impliedgg",
-            type: "copy",
-            data: "impliedgg",
-        },
-        {
-            name: "telegram",
-            label: "@impliedgg",
-            type: "link",
-            data: "https://t.me/impliedgg",
-        },
-        {
-            name: "bluesky",
-            label: "implied.win",
-            type: "link",
-            data: "https://bsky.app/profile/implied.win",
-        },
-        {
-            name: "email",
-            label: "me@implied.win",
-            type: "link",
-            data: "mailto:me@implied.win",
-        },
-        {
-            name: "signal",
-            label: "@emma.04",
-            type: "link",
-            data: "https://signal.me/#eu/dFjJ06TsakVLfFcqCtDmCQ3pHCJUiyO-9aag-6CBtn2eIRP18S1AyIC-kIOdW20C"
-        }
-    ];
+    import { contacts } from "$lib/data/contacts";
 </script>
 
 <svelte:head>

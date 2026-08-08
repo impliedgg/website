@@ -1,0 +1,21 @@
+PREAMBLE
+This preamble provides information on what files use the following license. It is not part of the actual license, legally
+    binding, nor is it legal advice for a court of law.
+
+This license applies to any files that contain the following text at the top of the file:
+    LICENSE EXCEPTION: This file is not owned by the author and is used licensed from another author.
+It also applies to files with this header:
+    LICENSE EXCEPTION: This file is derivative work of a differently licensed project.
+It also applies as noted elsewhere.
+
+All files without an exception are licensed under the terms
+written in `/license` (relative to this repository's root).
+
+COMMENTS
+This is the author's personal comments on the details around this license.
+
+This is a pseudo-license - there is no actual license attached to this document. The real license is not the author's.
+
+BEGIN LICENSE
+
+[left intentionally blank]

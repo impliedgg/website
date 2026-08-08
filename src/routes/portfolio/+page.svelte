@@ -1,22 +1,7 @@
 <script lang="ts">
-    import Card from "../card.svelte";
-    import Cardcontainer from "../cardcontainer.svelte";
-    import { type cardData } from '$lib';
-
-        let cards: cardData[] = [
-        {
-            title: "portproxy",
-            description: "A stupid simple port-to-port reverse proxy.",
-            language: "Go",
-            url: "https://github.com/impliedgg/portproxy"
-        },
-        {
-            title: "donottwitter",
-            description: "A userscript to remove your ability to browse Twitter (now X).",
-            language: "JavaScript",
-            url: "https://github.com/impliedgg/donottwitter"
-        }
-    ];
+    import Card from "$lib/card.svelte";
+    import Cardcontainer from "$lib/cardcontainer.svelte";
+    import { cards } from '$lib/data/cards';
 </script>
 
 <svelte:head>

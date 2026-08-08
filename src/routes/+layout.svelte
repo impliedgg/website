@@ -1,48 +1,54 @@
 <script>
-    import Navbutton from "../navbutton.svelte";
+    import Navbutton from "$lib/navbutton.svelte";
 
-	let { children } = $props();
-    let year = (new Date()).getFullYear();
+    let { children } = $props();
+    let year = new Date().getFullYear();
 </script>
-<style>
-    :root {
-        width: 800px;
-        margin: 0 auto;
-        padding: 0 0;
-    }
-    @media screen and (max-width: 800px) {
-        :root {
-            width: 100%;
-            font-size: larger;
-        }
-    }
-    @media screen and (min-width: 800px) and (max-width: 1200px) {
-        :root {
-            font-size: large;
-        }
-    }
-    nav {
-        padding-bottom: 0;
-    }
-    footer {
-        border-top: 1px solid var(--layer-10);
-        color: var(--layer-10);
-        width: 100%;
-        position: relative;
-        bottom: -4rem;
-        padding: 2em auto;
-        padding-bottom: 4rem;
-    }
-</style>
+
 <nav>
     <Navbutton label="home" href="/"></Navbutton>
     <Navbutton label="contacts" href="/contacts"></Navbutton>
     <Navbutton label="portfolio" href="/portfolio"></Navbutton>
 </nav>
 
-{@render children()}
+<main>
+    {@render children()}
+</main>
 
 <footer>
-    <span>&copy; {year}-, emily</span> ∙ <span>avatar by @aqinaaam</span><br>
-    <span>made with love, svelte, and one too many late nights</span>
+    <div>
+        <span>&copy; {year}-, emily</span> ∙ <span>avatar by @aqinaaam</span><br
+        />
+        <span>made with love, svelte, and one too many late nights</span>
+    </div>
 </footer>
+
+<style>
+    :root {
+        width: max(80vw, 1200px);
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1200px) {
+        :root {
+            width: 100%;
+        }
+    }
+    nav {
+        padding-bottom: 0;
+    }
+    main {
+        flex: 1;
+    }
+    footer {
+        color: var(--layer-10);
+        width: 100%;
+        position: relative;
+        /* margin-top: min(auto, 1rem); */
+        padding-top: 2rem;
+    }
+    footer div {
+        width: 100%;
+        border-top: 0.01rem solid var(--layer-10);
+        position: relative;
+    }
+</style>
