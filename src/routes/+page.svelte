@@ -1,3 +1,8 @@
+<!-- 
+    LICENSE EXCEPTION: This file is licensed under the zlib/libpng license with an additional restriction on identity.
+    See `licenses/zlib-extra-clause.txt` for terms. 
+-->
+
 <script lang="ts">
     import Cardcontainer from "$lib/cardcontainer.svelte";
     import Card from "$lib/card.svelte";
@@ -8,7 +13,6 @@
 <svelte:head>
     <meta name="description" content="emily's personal website. find my portfolio, contacts, and a biography.">
 </svelte:head>
-
 
 <h1>hi, i'm emily</h1>
 <p><span>she/her</span> ∙ <span>developer & student</span></p>

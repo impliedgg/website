@@ -1,3 +1,8 @@
+<!-- 
+    LICENSE EXCEPTION: This file is licensed under the zlib/libpng license with an additional restriction on identity.
+    See `licenses/zlib-extra-clause.txt` for terms. 
+-->
+
 <script>
     import Navbutton from "$lib/navbutton.svelte";
 
