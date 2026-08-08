@@ -29,7 +29,7 @@
 
 <style>
     :root {
-        width: max(80vw, 1200px);
+        width: max(50vw, 1200px);
         margin: 0 auto;
     }
     @media screen and (max-width: 1200px) {
