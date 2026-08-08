@@ -34,5 +34,6 @@ misrepresented as being the original software.
 distribution.
 
 4. You must remove references to the author's email, name, social media, links,
-or other personally-identifiable information from your derivative works. This does
-not apply to the license itself.
+or other personally-identifiable information from the author's original works.
+This does not apply to the license itself. If you do not pretend to be the author,
+this does not apply to references to the author added in derivative works. 
