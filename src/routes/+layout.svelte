@@ -17,8 +17,7 @@
 
 <footer>
     <div>
-        <span>&copy; {year}-, emily</span> ∙ <span>avatar by @aqinaaam</span><br
-        />
+        <span>&copy; {year}-, emily</span> ∙ <span>avatar by unknown author</span><br> <!-- did try to find the author. -->
         <span>made with love, svelte, and one too many late nights</span>
     </div>
 </footer>
