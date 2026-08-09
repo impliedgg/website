@@ -1,7 +1,33 @@
 PREAMBLE
 This preamble provides information on what files use the following license. It is not part of the actual license, legally
-    binding, nor is it legal advice.
-This license applies to any files without a `LICENSE EXCEPTION`.
+    binding, nor is it legal advice for a court of law.
+
+This license applies to any files that contain the following text at the top of the file:
+    LICENSE EXCEPTION: This file is licensed under the zlib/libpng license. See `licenses/zlib.txt` for terms.
+It also applies as noted elsewhere.
+
+All files without an exception are licensed under the terms
+written in `/license` (relative to this repository's root).
 
 BEGIN LICENSE
-Copyright Emily Lawrence, 2026-. All rights reserved.
+
+Copyright (c) 2026- Emily Lawrence
+
+This software is provided ‘as-is’, without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+claim that you wrote the original software. If you use this software
+in a product, an acknowledgment in the product documentation would be
+appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not be
+misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source
+distribution.
