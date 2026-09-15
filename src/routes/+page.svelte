@@ -14,8 +14,8 @@
     <meta name="description" content="emily's personal website. find my portfolio, contacts, and a biography.">
 </svelte:head>
 
-<h1>hi, i'm emily</h1>
-<p><span>she/her</span> ∙ <span>developer & student</span></p>
+<h1 class="mb-0">hi, i'm emily</h1>
+<p class="text-text-subtle dark:text-dark-text-subtle"><span>she/her</span> ∙ <span>developer & student</span></p>
 
 <p>i'm a gal that loves to code and publishes the occasional project.
     you can find me on games such as factorio, valorant, or splitgate, and in my ide doing whatever.
@@ -35,13 +35,10 @@
 <a href="/portfolio">see more here <small>&gt;</small></a>
 
 <style>
-    h1 {
-        margin-bottom: 0;
-    }
-    h1 + p {
+    /* h1 + p {
         color: var(--layer-10);
         margin-top: 0;
-    }
+    } */
 </style>
 
 <!--- mastodon verification - i have an account on tech.lgbt, but it is pretty much unused. --->

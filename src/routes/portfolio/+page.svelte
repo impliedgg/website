@@ -18,7 +18,7 @@
 <h2>skills</h2>
 
 <p>i use the following programming languages, frameworks, and technologies:</p>
-<div class="icon-container">
+<div class="inline-block text-4xl m-1 mt-3">
     <i title="Go" class="devicon-go-original-wordmark"></i>
     <i title="Python" class="devicon-python-plain"></i>
     <i title="JavaScript" class="devicon-javascript-plain"></i>
@@ -66,9 +66,4 @@
 </CardContainer>
 
 <style>
-    .icon-container i {
-        display: inline-block;
-        font-size: 2.8rem;
-        padding: .1rem;
-    }
 </style>

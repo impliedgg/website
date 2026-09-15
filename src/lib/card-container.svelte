@@ -2,24 +2,10 @@
     let { children } = $props();
 </script>
 
-<div class="portfolio-container">
+<div class="m-0 grid gap-x-2 gap-y-2 w-full grid-cols-1 lg:grid-cols-2">
     {@render children?.()}
 </div>
 
 <style>
-
-    .portfolio-container {
-        margin: 0 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        column-gap: 0.75em;
-        row-gap: 0.75em;
-    }
-
-    @media screen and (max-width: 800px) {
-        .portfolio-container {
-            flex-direction: column;
-        }
-    }
+    /* for some godforsaken reason, removing this style causes the children prop to not work. */
 </style>

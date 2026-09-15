@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { browser } from "$app/environment";
-
     let {
         name = "unknown",
         label = "unknown",
@@ -18,57 +16,34 @@
     }
 </script>
 
+{#snippet button()}
+    <button class="my-0.5 px-1 text-2xl md:text-lg lg:text-base hover:cursor-pointer hover:brightness-80 hover:bg-surface-15 hover:dark:bg-surface-100 hover:dark:brightness-120">
+        <span>{name}</span>
+    </button>
+    <span>{display}</span>
+{/snippet}
+
 {#if type == "copy"}
-    <div aria-hidden="true"
+    <div
+        aria-hidden="true"
         onclick={() => {
             handleClick("copy");
         }}
     >
-        <button
-            onclick={() => {
-                handleClick("copy");
-            }}
-        >
-            <span>{name}</span>
-        </button>
-        <span>{display}</span>
+        {@render button()}
     </div>
 {:else if type == "link"}
     <div>
-        <a href={data} target="_blank">
-            <button>
-                <span>{name}</span>
-            </button>
-            <span>{display}</span>
+        <a class="text-text! dark:text-dark-text!" href={data} target="_blank">
+            {@render button()}
         </a>
     </div>
 {:else}
-    <span>this shouldn't be visible :p please contact me via email</span>
+    <span
+        >[there should be another contact method here; please contact me via
+        email if you see this.]</span
+    >
 {/if}
 
 <style>
-    @media screen and (max-width: 800px) {
-        button {
-            font-size: larger;
-        }
-    }
-    @media screen and (min-width: 800px) and (max-width: 1200px) {
-        button {
-            font-size: large;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: var(--content);
-    }
-
-    button {
-        margin: 0.1em 0;
-        background-color: #00000000;
-        color: var(--content);
-        border: 1px solid var(--layer-12);
-        border-radius: 4px;
-        padding: 0 0.25em;
-    }
-    button + span { margin-left: 0.25em; }
 </style>

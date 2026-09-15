@@ -10,43 +10,6 @@
 </script>
 
 <style>
-    :root {
-        --nav-active-link: var(--layer-11);
-        --nav-hover-link: var(--layer-9);
-        --nav-main-link: var(--layer-8);
-    }
-    button {
-        background-color: #00000000;
-        border: 1px solid var(--nav-main-link);
-        border-radius: 4px;
-        color: var(--nav-main-link);
-        padding: 0.25em 0.5em;
-        margin: .1em auto;
-    }
-    button.active {
-        background-color: var(--layer-1);
-        border-color: var(--nav-active-link);
-        color: var(--nav-active-link);
-    }
-    button:hover {
-        cursor: pointer;
-        background-color: var(--layer-3);
-        color: var(--nav-hover-link);
-    }
-    @media (hover: none) and (max-width: 800px) { /* detect touchscreens and then filter by width */
-        button {
-            font-size: larger;
-        }
-    }
-    @media (hover: none) and (min-width: 800px) {
-        button {
-            font-size: large;
-        }
-    }
 </style>
 
-{#if path == href}
-<a {href}><button class="active">{label}</button></a>
-{:else}
-<a {href}><button>{label}</button></a>
-{/if}
+<a {href}><button class="border-none! bg-surface-10 dark:bg-dark-bg sm:text-xl md:text-lg hover:cursor-pointer px-1 py-0 hover:bg-surface-20 hover:dark:bg-surface-100 hover:brightness-80 hover:dark:brightness-120 {path == href ? "text-text dark:text-dark-text" : "text-surface-80 dark:text-surface-40"}">{label}</button></a>

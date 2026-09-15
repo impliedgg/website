@@ -13,71 +13,44 @@
     if (language == "Unknown") {
         color = "#ffffff";
     } else if (Object.hasOwn(colors, language)) {
-        let temp_color: string | null = colors[language].color;
-        if (temp_color) {
+        let temp_color: string | null = colors[language].color?.toLowerCase() ?? null;
+        if (temp_color !== null) {
             color = temp_color;
         }
     }
-    import BoxArrowUpRight from './bi-box-arrow-up-right.svelte'
 </script>
 
-<div class="portfolio-card">
+<div class="px-2 pb-4 border-2 border-zinc-800 rounded-md relative">
     {#if url != "#"}
-    <a href="{url}" target="_blank">
-        <h2>{title}
-            <span><BoxArrowUpRight></BoxArrowUpRight></span>
-        </h2>
-    </a>
+        <a href={url} target="_blank" class="text-text text-xl">
+            <h2>
+                {title}
+                <span class="absolute right-2 pt-2">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-3.5"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                    </svg>
+                </span>
+            </h2>
+        </a>
     {:else}
-        <h2>{title}</h2>
+        <h2 class="text-[--color-text]">{title}</h2>
     {/if}
-    
-    <p>{description}</p>
-    <span class="lang"
-        ><span class="gh-color" style="background-color: {color}">&nbsp;</span
-        ><span>{language}</span></span
+
+    <p class="pb-6">{description}</p>
+    <span class="bottom-1 absolute">
+        <!-- cannot inline background color via css utility class since color is computed at runtime -->
+        <span class="inline-block size-5 rounded-md mr-1" style="background-color: {color};"></span>
+        <span class="align-top">{language}</span></span
     >
 </div>
-
-<style>
-    :root {
-        --outer-padding: 0.5em;
-    }
-    a, a:link, a:visited {
-        text-decoration: none;
-        color: inherit;
-    }
-    .portfolio-card {
-        background-color: var(--layer-1);
-        border: 2px solid var(--layer-4);
-        border-radius: 0.5em;
-        height: auto;
-        padding: var(--outer-padding);
-        padding-bottom: calc(var(--outer-padding) * 2);
-        position: relative;
-    }
-    .portfolio-card h2 span {
-        position: absolute;
-        right: var(--outer-padding);
-    }
-    .portfolio-card h2,
-    .portfolio-card p {
-        margin: 0 auto;
-    }
-    .portfolio-card p {
-        padding-bottom: 1em;
-    }
-    .lang {
-        position: absolute;
-        padding-top: auto;
-        bottom: var(--outer-padding);
-    }
-    .gh-color {
-        display: inline-block;
-        vertical-align: sub;
-        width: 1em;
-        height: 1em;
-        margin-right: 0.25rem;
-        border-radius: 0.25em;
-    }
-</style>

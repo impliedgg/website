@@ -19,22 +19,7 @@
 		* {
 			font-family: "Outfit", sans-serif;
 
-			--layer-0: #121212;
-			--layer-1: #222222;
-			--layer-2: #313131;
-			--layer-3: #4a4a4a;
-			--layer-4: #606060;
-			--layer-5: #797979;
-			--layer-6: #8f8f8f;
-			--layer-7: #a8a8a8;
-			--layer-8: #bebebe;
-			--layer-9: #c7c7c7;
-			--layer-10: #dddddd;
-			--layer-11: #e6e6e6;
-			--layer-12: #fcfcfc;
-
-			--content: var(--layer-12);
-			--accent: #bb44bb;
+			--content: var(--color-text);
 		}
 
 		:root {
@@ -43,20 +28,12 @@
 
 		body {
 			--margin-size: 0.5rem;
-			background-color: var(--layer-0);
-			color: var(--content);
+			background-color: var(--color-bg);
+			color: var(--color-text);
 			height: calc(100% - var(--margin-size));
 			display: flex;
 			flex-direction: column;
 			margin: var(--margin-size);
-		}
-
-		a {
-			color: var(--accent);
-		}
-
-		a:visited {
-			color: var(--accent);
 		}
 	</style>
 

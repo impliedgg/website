@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-surface-0: var(--color-zinc-100);
+    --color-surface-5: color-mix(in oklch, var(--color-surface-0) 50%, var(--color-surface-10) 50%);
+    --color-surface-10: var(--color-zinc-200);
+    --color-surface-15: color-mix(in oklch, var(--color-surface-10) 50%, var(--color-surface-20) 50%);
+    --color-surface-20: var(--color-zinc-300);
+    --color-surface-25: color-mix(in oklch, var(--color-surface-20) 50%, var(--color-surface-30) 50%);
+    --color-surface-30: var(--color-zinc-400);
+    --color-surface-35: color-mix(in oklch, var(--color-surface-30) 50%, var(--color-surface-40) 50%);
+    --color-surface-40: var(--color-zinc-500);
+    --color-surface-45: color-mix(in oklch, var(--color-surface-40) 50%, var(--color-surface-50) 50%);
+    --color-surface-50: var(--color-zinc-600);
+    --color-surface-55: color-mix(in oklch, var(--color-surface-50) 50%, var(--color-surface-60) 50%);
+    --color-surface-60: var(--color-zinc-700);
+    --color-surface-65: color-mix(in oklch, var(--color-surface-60) 50%, var(--color-surface-70) 50%);
+    --color-surface-70: var(--color-zinc-600);
+    --color-surface-75: color-mix(in oklch, var(--color-surface-70) 50%, var(--color-surface-80) 50%);
+    --color-surface-80: var(--color-zinc-700);
+    --color-surface-85: color-mix(in oklch, var(--color-surface-80) 50%, var(--color-surface-90) 50%);
+    --color-surface-90: var(--color-zinc-800);
+    --color-surface-95: color-mix(in oklch, var(--color-surface-90) 50%, var(--color-surface-100) 50%);
+    --color-surface-100: var(--color-zinc-900);
+    --color-surface-105: var(--color-zinc-950);
+
+    --color-accent: var(--color-fuchsia-600);
+    --color-text: var(--color-surface-95);
+    --color-text-subtle: var(--color-surface-70);
+    --color-bg: var(--color-surface-0);
+
+    --color-dark-accent: var(--color-fuchsia-400);
+    --color-dark-text: var(--color-surface-5);
+    --color-dark-text-subtle: var(--color-surface-30);
+    --color-dark-bg: var(--color-surface-105);
+}
+
+body {
+    @apply bg-bg dark:bg-dark-bg text-text dark:text-dark-text;
+}
+
+a {
+    @apply text-accent;
+}
+
+h1 {
+    @apply text-4xl font-bold text-text dark:text-dark-text;
+}
+
+h2 {
+    @apply text-2xl font-semibold text-text dark:text-dark-text;
+}
+
+button {
+    @apply rounded-lg border border-text-subtle dark:border-dark-text-subtle;
+}
