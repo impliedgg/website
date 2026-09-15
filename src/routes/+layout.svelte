@@ -22,7 +22,7 @@
 
 <footer>
     <div>
-        <span>&copy; {year}-, emily</span> ∙ <span>avatar by unknown author</span><br> <!-- did try to find the author. -->
+        <span>&copy; {year}-, emily</span> ∙ <span>avatar from <a href="https://x.com/Rialickpero/status/1604229557225390080">@rialickpero</a><sup title="the avatar is cropped and grayscale, originally found on pinterest." style="text-decoration: underline dashed;">?</sup></span><br>
         <span>made with love, svelte, and one too many late nights</span>
     </div>
 </footer>
