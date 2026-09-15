@@ -1,6 +1,6 @@
 <script lang="ts">
     import Card from "$lib/card.svelte";
-    import Cardcontainer from "$lib/cardcontainer.svelte";
+    import CardContainer from "$lib/card-container.svelte";
     import { cards } from '$lib/data/cards';
 </script>
 
@@ -15,14 +15,8 @@
     for now, this is a bit empty.
 </p>
 
-<Cardcontainer>
+<CardContainer>
     {#each cards as c}
-        <Card title={c['title']} description={c['description']} language={c['language']} url={c['url']}></Card>
+        <Card {...c}/>
     {/each}
-</Cardcontainer>
-<!-- 
-<p>
-    why not check out <a href="https://github.com/impliedgg" target="_blank"
-        >my github</a
-    > in the meantime?
-</p> -->
+</CardContainer>

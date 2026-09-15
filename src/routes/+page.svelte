@@ -4,7 +4,7 @@
 -->
 
 <script lang="ts">
-    import Cardcontainer from "$lib/cardcontainer.svelte";
+    import CardContainer from "$lib/card-container.svelte";
     import Card from "$lib/card.svelte";
     import { type cardData } from '$lib';
     import { showcase_cards } from "$lib/data/cards";
@@ -31,11 +31,11 @@
     the projects i think are worth linking here.
 </p>
 
-<Cardcontainer>
+<CardContainer>
     {#each showcase_cards as c}
-        <Card title={c['title']} description={c['description']} language={c['language']} url={c['url']}></Card>
+        <Card {...c} />
     {/each}
-</Cardcontainer>
+</CardContainer>
 
 <style>
     h1 {

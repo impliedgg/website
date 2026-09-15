@@ -4,16 +4,16 @@
 -->
 
 <script>
-    import Navbutton from "$lib/navbutton.svelte";
+    import NavButton from "$lib/nav-button.svelte";
 
     let { children } = $props();
     let year = new Date().getFullYear();
 </script>
 
 <nav>
-    <Navbutton label="home" href="/"></Navbutton>
-    <Navbutton label="contacts" href="/contacts"></Navbutton>
-    <Navbutton label="portfolio" href="/portfolio"></Navbutton>
+    <NavButton label="home" href="/" />
+    <NavButton label="contacts" href="/contacts" />
+    <NavButton label="portfolio" href="/portfolio" />
 </nav>
 
 <main>
