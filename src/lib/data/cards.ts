@@ -8,25 +8,25 @@ import type { cardData } from "$lib";
 export const cards: cardData[] = [
     {
         title: "portproxy",
-        description: "A stupid simple port-to-port reverse proxy.",
+        description: "A stupid simple port-to-port reverse proxy, primarily intended for temporarily proxying services like games.",
         language: "Go",
         url: "https://github.com/impliedgg/portproxy"
     },
     {
+        title: "userscripts",
+        description: "A collection of small userscripts designed to improve the experience on certain websites.",
+        language: "JavaScript",
+        url: "https://github.com/impliedgg/userscripts"
+    },
+    {
         title: "7ZVaultWF",
-        description: "No-frills utility to unpack encrypted 7Zip 'vaults' to a temporary folder and save the changes.",
+        description: "No-frills Windows utility to unpack encrypted 7-zip archives to a temporary folder for easy access on public machines.",
         language: "C#",
         url: "https://github.com/impliedgg/7ZVaultWF"
     },
     {
-        title: "donottwitter",
-        description: "A userscript to remove your ability to browse Twitter (now X).",
-        language: "JavaScript",
-        url: "https://github.com/impliedgg/donottwitter"
-    },
-    {
         title: "obs-autostart",
-        description: "Automatically start OBS virtual camera and replay buffer with OBS.",
+        description: "Automatically start OBS' virtual camera and replay buffer when OBS starts.",
         language: "Lua",
         url: "https://github.com/impliedgg/obs-autostart"
     },

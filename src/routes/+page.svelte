@@ -21,21 +21,18 @@
     you can find me on games such as factorio, valorant, or splitgate, and in my ide doing whatever.
 </p>
 <p>
-    i'm currently studying as an AAS Computer Programming major, working towards a bachelor's in cybersecurity. i'm
-    self-employed but open to software engineering or software development roles (prefer the former - i don't like <i>just</i>
-    churning out code from a requirements doc.)
+    i'm part time enrolled in college, working towards an associate's in computer programming and a bachelor's in cybersecurity.
+    i'm self employed, and open for work on fullstack applications, alongside true backend work.
 </p>
 <br>
-<p>
-    i've made a few things - <a href="https://github.com/impliedgg">my github</a> has more, but these are
-    the projects i think are worth linking here.
-</p>
 
+<h2>showcased projects</h2>
 <CardContainer>
     {#each showcase_cards as c}
         <Card {...c} />
     {/each}
 </CardContainer>
+<a href="/portfolio">see more here <small>&gt;</small></a>
 
 <style>
     h1 {
