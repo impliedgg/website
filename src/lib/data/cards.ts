@@ -3,9 +3,9 @@
     See `licenses/zlib-extra-clause.txt` for terms.
 */
 
-import type { cardData } from "$lib";
+import type { CardData } from "$lib/types/cardData";
 
-export const cards: cardData[] = [
+export const cards: CardData[] = [
     {
         title: "portproxy",
         description: "A stupid simple port-to-port reverse proxy, primarily intended for temporarily proxying services like games.",
@@ -32,4 +32,4 @@ export const cards: cardData[] = [
     },
 ];
 
-export const showcase_cards: cardData[] = cards.slice(0, 2);
+export const showcase_cards: CardData[] = cards.slice(0, 2);

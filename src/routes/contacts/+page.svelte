@@ -18,8 +18,8 @@
     <br><br> 
 </p>
 <div>
-    {#each contacts as { name, label, type, data }}
-        <Contact {name} {label} {type} {data}></Contact>
+    {#each contacts as contact}
+        <Contact {...contact} />
     {/each}
 </div>
 

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Card from "$lib/card.svelte";
-    import CardContainer from "$lib/card-container.svelte";
+    import Card from "$lib/components/card.svelte";
+    import CardContainer from "$lib/components/card-container.svelte";
     import { cards } from "$lib/data/cards";
 </script>
 

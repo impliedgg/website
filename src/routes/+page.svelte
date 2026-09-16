@@ -4,9 +4,9 @@
 -->
 
 <script lang="ts">
-    import CardContainer from "$lib/card-container.svelte";
-    import Card from "$lib/card.svelte";
-    import { type cardData } from '$lib';
+    import CardContainer from "$lib/components/card-container.svelte";
+    import Card from "$lib/components/card.svelte";
+    
     import { showcase_cards } from "$lib/data/cards";
 </script>
 

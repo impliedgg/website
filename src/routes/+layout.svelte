@@ -1,6 +1,6 @@
 <script>
 	import './layout.css';
-	import NavButton from "$lib/nav-button.svelte";
+	import NavButton from "$lib/components/nav-button.svelte";
 
 	let { children } = $props();
 	let year = new Date().getFullYear();
