@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Card from "$lib/components/card.svelte";
-    import CardContainer from "$lib/components/card-container.svelte";
-    import { cards } from "$lib/data/cards";
+    import Card from "components/card.svelte";
+    import CardContainer from "components/card-container.svelte";
+    import { cards } from "data/cards";
 </script>
 
 <svelte:head>

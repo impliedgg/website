@@ -4,10 +4,10 @@
 -->
 
 <script lang="ts">
-    import CardContainer from "$lib/components/card-container.svelte";
-    import Card from "$lib/components/card.svelte";
+    import CardContainer from "components/card-container.svelte";
+    import Card from "components/card.svelte";
     
-    import { showcase_cards } from "$lib/data/cards";
+    import { showcase_cards } from "data/cards";
 </script>
 
 <svelte:head>

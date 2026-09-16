@@ -1,7 +1,7 @@
 <script lang="ts">
     import Contact from "./contact.svelte";
 
-    import { contacts } from "$lib/data/contacts";
+    import { contacts } from "data/contacts";
 </script>
 
 <svelte:head>

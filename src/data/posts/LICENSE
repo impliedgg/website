@@ -1,0 +1,7 @@
+/*
+    LICENSE EXCEPTION: This folder, excluding files listed below, is licensed under the zlib/libpng license with an additional restriction on identity.
+    See `licenses/zlib-extra-clause.txt` for terms.
+
+    post-not-found.svx is a component used in case a post doesn't exist, and therefore has the default zlib/libpng license apply. You should not remove it.
+    All other files (posts) are licensed under the LICENSE EXCEPTION terms above.
+*/

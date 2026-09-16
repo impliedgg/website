@@ -2,6 +2,13 @@
 // for information about these interfaces
 declare global {
 	namespace App {
+		declare module '*.sxv' {
+			import type { Component } from 'svelte'
+
+			declare const MarkdownComponent: Component
+
+			export default MarkdownComponent
+		}
 		// interface Error {}
 		// interface Locals {}
 		// interface PageData {}
@@ -10,4 +17,4 @@ declare global {
 	}
 }
 
-export {};
+export { };

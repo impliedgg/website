@@ -1,6 +1,6 @@
 <script>
 	import './layout.css';
-	import NavButton from "$lib/components/nav-button.svelte";
+	import NavButton from "components/nav-button.svelte";
 
 	let { children } = $props();
 	let year = new Date().getFullYear();
@@ -15,6 +15,7 @@
 	<NavButton label="home" href="/" />
 	<NavButton label="contacts" href="/contacts" />
 	<NavButton label="portfolio" href="/portfolio" />
+	<NavButton label="posts" href="/posts" method="prefix"/>
 </nav>
 
 <main>{@render children()}</main>
@@ -43,8 +44,11 @@
 </footer>
 
 <style>
+	@reference 'layout.css';
+
 	:root {
-		width: max(50vw, 1200px);
+		
+		@apply min-w-[50%] max-w-160;
 		margin: 0 auto;
 	}
 

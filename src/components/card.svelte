@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { github_colors } from "$lib/data/github-colors";
+    import { github_colors } from "data/github-colors";
     const colors: {
         [index: string]: { color: string | null; url: string | null };
     } = github_colors;

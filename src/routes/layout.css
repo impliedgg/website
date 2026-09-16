@@ -43,14 +43,31 @@ a {
     @apply text-accent;
 }
 
+p {
+    @apply mb-4;
+}
+
 h1 {
-    @apply text-4xl font-bold text-text dark:text-dark-text;
+    @apply text-4xl font-bold text-text dark:text-dark-text my-1;
 }
 
 h2 {
-    @apply text-2xl font-semibold text-text dark:text-dark-text;
+    @apply text-2xl font-semibold text-text dark:text-dark-text my-2;
+}
+
+h3 {
+    @apply text-xl font-semibold text-text dark:text-dark-text my-1;
 }
 
 button {
     @apply rounded-lg border border-text-subtle dark:border-dark-text-subtle;
+}
+
+code {
+    font-family: monospace;
+    @apply rounded-lg p-0.5 bg-slate-200 dark:bg-slate-800;
+}
+
+ol {
+    @apply list-decimal list-inside;
 }
