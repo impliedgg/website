@@ -11,7 +11,12 @@
 </script>
 
 <svelte:head>
-    <meta name="description" content="emily's personal website. find my portfolio, contacts, and a biography.">
+    <title>implied.win</title>
+	<meta property="og:title" content="implied.win">
+	<meta property="og:description" content="my personal website, containing a bio, portfolio, and posts.">
+	<meta property="og:url" content="https://implied.win/">
+	<meta property="og:type" content="website">
+    <meta name="description" content="my personal website, containing a bio, portfolio, and posts.">
 </svelte:head>
 
 <h1 class="mb-0">hi, i'm emily</h1>

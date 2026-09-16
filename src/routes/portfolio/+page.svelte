@@ -11,6 +11,12 @@
         type="text/css"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <title>implied.win - portfolio</title>
+    <meta property="og:title" content="implied.win - portfolio">
+	<meta property="og:description" content="a collection of my personal works and skills.">
+	<meta property="og:url" content="https://implied.win/portfolio">
+	<meta property="og:type" content="website">
+	<meta name="description" content="a collection of my personal works and skills.">
 </svelte:head>
 
 <h1>portfolio</h1>

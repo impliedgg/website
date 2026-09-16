@@ -5,6 +5,15 @@
     let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+    <title>implied.win - posts</title>
+    <meta property="og:title" content="implied.win - posts">
+	<meta property="og:description" content="blogposts, writeups, and other various ramblings in one bin.">
+	<meta property="og:url" content="https://implied.win/posts">
+	<meta property="og:type" content="website">
+	<meta name="description">
+</svelte:head>
+
 {#snippet postlist(post: Post)}
     <li>
         <a href="/posts/{post.fname}" class="text-text! dark:text-dark-text!">

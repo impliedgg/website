@@ -6,6 +6,12 @@
 
 <svelte:head>
     <meta name="robots" content="noindex" />
+    <title>implied.win - contacts</title>
+    <meta property="og:title" content="implied.win - contacts">
+	<meta property="og:description" content="my contact information on various socials.">
+	<meta property="og:url" content="https://implied.win/contacts">
+	<meta property="og:type" content="website">
+	<meta name="description" content="my contact information on various socials.">
 </svelte:head>
 
 <h1>contacts</h1>
